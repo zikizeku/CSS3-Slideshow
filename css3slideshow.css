@@ -1,0 +1,80 @@
+/* Slideshow continuous with CSS3 animations */
+
+/* Animation */
+
+@keyframes deslizar {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 3000px;
+    }
+}
+
+/* Container */
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 102px;
+    margin-top: 200px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.liquid-slice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    height: 100px;
+    width: 100vw;
+}
+
+/* Images */
+
+img {
+    position: absolute;
+    left: -200px;
+    height: 100px;
+    width: 100px;
+    margin: 0 5px;
+}
+
+/* Slides */
+
+#slide-1 {
+    animation: deslizar 10s linear 0s infinite normal;
+}
+#slide-2 {
+    animation: deslizar 10s linear 1s infinite normal;
+}
+#slide-3 {
+    animation: deslizar 10s linear 2s infinite normal;
+}
+#slide-4 {
+    animation: deslizar 10s linear 3s infinite normal;
+}
+#slide-5 {
+    animation: deslizar 10s linear 4s infinite normal;
+}
+#slide-6 {
+    animation: deslizar 10s linear 5s infinite normal;
+}
+#slide-7 {
+    animation: deslizar 10s linear 6s infinite normal;
+}
+#slide-8 {
+    animation: deslizar 10s linear 7s infinite normal;
+}
+#slide-9 {
+    animation: deslizar 10s linear 8s infinite normal;
+}
+#slide-10 {
+    animation: deslizar 10s linear 9s infinite normal;
+}
